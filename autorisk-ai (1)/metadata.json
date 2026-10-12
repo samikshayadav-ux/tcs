@@ -1,0 +1,6 @@
+{
+  "name": "AutoRisk AI",
+  "description": "Professional vehicle insurance underwriting and risk analytics dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
