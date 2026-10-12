@@ -1,0 +1,88 @@
+{
+  "target_name": "FraudFound_P",
+  "selected_model_name": "logistic_regression_balanced",
+  "model_type": "LogisticRegression",
+  "classifier_params": {
+    "C": "1.0",
+    "class_weight": "balanced",
+    "dual": "False",
+    "fit_intercept": "True",
+    "intercept_scaling": "1",
+    "l1_ratio": "None",
+    "max_iter": "1000",
+    "multi_class": "deprecated",
+    "n_jobs": "None",
+    "penalty": "l2",
+    "random_state": "42",
+    "solver": "lbfgs",
+    "tol": "0.0001",
+    "verbose": "0",
+    "warm_start": "False"
+  },
+  "training_timestamp_utc": "2026-10-12T08:14:57.454348+00:00",
+  "dataset_split_configuration": {
+    "total_rows": 15420,
+    "train_rows": 12336,
+    "test_rows": 3084,
+    "test_size": 0.2,
+    "random_state": 42,
+    "train_class_distribution": {
+      "0_legitimate": 11598,
+      "1_fraud": 738,
+      "fraud_rate_pct": 5.98
+    },
+    "test_class_distribution": {
+      "0_legitimate": 2899,
+      "1_fraud": 185,
+      "fraud_rate_pct": 6.0
+    }
+  },
+  "features": {
+    "numeric": [
+      "WeekOfMonth",
+      "Age",
+      "Deductible",
+      "DriverRating"
+    ],
+    "categorical": [
+      "Month",
+      "DayOfWeek",
+      "Make",
+      "AccidentArea",
+      "Sex",
+      "MaritalStatus",
+      "Fault",
+      "PolicyType",
+      "VehicleCategory",
+      "VehiclePrice",
+      "Days_Policy_Accident",
+      "Days_Policy_Claim",
+      "PastNumberOfClaims",
+      "AgeOfVehicle",
+      "AgeOfPolicyHolder",
+      "PoliceReportFiled",
+      "WitnessPresent",
+      "AgentType",
+      "NumberOfSuppliments",
+      "AddressChange_Claim",
+      "NumberOfCars",
+      "BasePolicy"
+    ],
+    "total_count": 26,
+    "excluded_features": [
+      "FraudFound_P",
+      "PolicyNumber",
+      "RepNumber",
+      "Year",
+      "MonthClaimed",
+      "DayOfWeekClaimed",
+      "WeekOfMonthClaimed"
+    ]
+  },
+  "limitations": [
+    "Dataset reflects historical 1994-1996 insurance claims; not representative of modern ADAS/electric vehicle failure modes.",
+    "Model predicts historical claim fraud classification probability, NOT accident risk, driving safety, mechanical breakdown, or premium pricing.",
+    "Scores must be treated as statistical review priorities, NEVER as definitive proof or legal accusations of fraud.",
+    "Class imbalance (5.99% fraud) necessitates threshold management during operational deployment."
+  ]
+}
