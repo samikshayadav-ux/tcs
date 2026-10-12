@@ -19,3 +19,9 @@ htmlcov/
 # IDE
 .vscode/
 .idea/
+
+# Environment and secrets
+.env
+*.env
+.env.*
+!*.env.example
