@@ -1,0 +1,6 @@
+# AutoRisk AI - Part 1 (ML & Data Layer) Dependencies
+scikit-learn>=1.5.0
+pandas>=2.2.0
+numpy>=1.26.0
+joblib>=1.4.0
+pytest>=7.4.0

@@ -1,0 +1,129 @@
+{
+  "selected_model": "logistic_regression_balanced",
+  "metrics": {
+    "dummy_most_frequent": {
+      "confusion_matrix": {
+        "true_negatives": 2899,
+        "false_positives": 0,
+        "false_negatives": 185,
+        "true_positives": 0,
+        "raw_matrix": [
+          [
+            2899,
+            0
+          ],
+          [
+            185,
+            0
+          ]
+        ]
+      },
+      "precision_fraud": 0.0,
+      "recall_fraud": 0.0,
+      "f1_fraud": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.06,
+      "accuracy": 0.94
+    },
+    "dummy_stratified": {
+      "confusion_matrix": {
+        "true_negatives": 2709,
+        "false_positives": 190,
+        "false_negatives": 172,
+        "true_positives": 13,
+        "raw_matrix": [
+          [
+            2709,
+            190
+          ],
+          [
+            172,
+            13
+          ]
+        ]
+      },
+      "precision_fraud": 0.064,
+      "recall_fraud": 0.0703,
+      "f1_fraud": 0.067,
+      "roc_auc": 0.5024,
+      "pr_auc": 0.0603,
+      "accuracy": 0.8826
+    },
+    "logistic_regression_balanced": {
+      "confusion_matrix": {
+        "true_negatives": 1806,
+        "false_positives": 1093,
+        "false_negatives": 21,
+        "true_positives": 164,
+        "raw_matrix": [
+          [
+            1806,
+            1093
+          ],
+          [
+            21,
+            164
+          ]
+        ]
+      },
+      "precision_fraud": 0.1305,
+      "recall_fraud": 0.8865,
+      "f1_fraud": 0.2275,
+      "roc_auc": 0.8067,
+      "pr_auc": 0.1534,
+      "accuracy": 0.6388
+    },
+    "random_forest_balanced": {
+      "confusion_matrix": {
+        "true_negatives": 1902,
+        "false_positives": 997,
+        "false_negatives": 35,
+        "true_positives": 150,
+        "raw_matrix": [
+          [
+            1902,
+            997
+          ],
+          [
+            35,
+            150
+          ]
+        ]
+      },
+      "precision_fraud": 0.1308,
+      "recall_fraud": 0.8108,
+      "f1_fraud": 0.2252,
+      "roc_auc": 0.8077,
+      "pr_auc": 0.176,
+      "accuracy": 0.6654
+    },
+    "random_forest_default": {
+      "confusion_matrix": {
+        "true_negatives": 2899,
+        "false_positives": 0,
+        "false_negatives": 184,
+        "true_positives": 1,
+        "raw_matrix": [
+          [
+            2899,
+            0
+          ],
+          [
+            184,
+            1
+          ]
+        ]
+      },
+      "precision_fraud": 1.0,
+      "recall_fraud": 0.0054,
+      "f1_fraud": 0.0108,
+      "roc_auc": 0.8186,
+      "pr_auc": 0.236,
+      "accuracy": 0.9403
+    }
+  },
+  "trade_off_analysis": {
+    "insurance_context": "In insurance claim processing, a False Negative represents a fraudulent claim paid out without scrutiny (direct indemnity loss). A False Positive represents a legitimate claim flagged for secondary human / SIU review (temporary operational delay). LogisticRegression with balanced class weighting flags ~88.6% of fraudulent claims with manageable review volume.",
+    "accuracy_fallacy": "A naive baseline predicting 100% legitimate claims achieves ~94% accuracy but detects 0 frauds. Accuracy is strictly a secondary metric."
+  }
+}

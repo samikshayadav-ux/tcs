@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0",
+  "supported_features": {
+    "WeekOfMonth": {
+      "type": "numeric",
+      "python_types": [
+        "int",
+        "float"
+      ],
+      "min": 1.0,
+      "max": 5.0,
+      "description": "Numeric feature 'WeekOfMonth'"
+    },
+    "Age": {
+      "type": "numeric",
+      "python_types": [
+        "int",
+        "float"
+      ],
+      "min": 0.0,
+      "max": 80.0,
+      "description": "Numeric feature 'Age'"
+    },
+    "Deductible": {
+      "type": "numeric",
+      "python_types": [
+        "int",
+        "float"
+      ],
+      "min": 300.0,
+      "max": 700.0,
+      "description": "Numeric feature 'Deductible'"
+    },
+    "DriverRating": {
+      "type": "numeric",
+      "python_types": [
+        "int",
+        "float"
+      ],
+      "min": 1.0,
+      "max": 4.0,
+      "description": "Numeric feature 'DriverRating'"
+    },
+    "Month": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "Apr",
+        "Aug",
+        "Dec",
+        "Feb",
+        "Jan",
+        "Jul",
+        "Jun",
+        "Mar",
+        "May",
+        "Nov",
+        "Oct",
+        "Sep"
+      ],
+      "description": "Categorical feature 'Month' with 12 unique observed levels"
+    },
+    "DayOfWeek": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "Friday",
+        "Monday",
+        "Saturday",
+        "Sunday",
+        "Thursday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "description": "Categorical feature 'DayOfWeek' with 7 unique observed levels"
+    },
+    "Make": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "Accura",
+        "BMW",
+        "Chevrolet",
+        "Dodge",
+        "Ferrari",
+        "Ford",
+        "Honda",
+        "Jaguar",
+        "Lexus",
+        "Mazda",
+        "Mecedes",
+        "Mercury",
+        "Nisson",
+        "Pontiac",
+        "Porche",
+        "Saab",
+        "Saturn",
+        "Toyota",
+        "VW"
+      ],
+      "description": "Categorical feature 'Make' with 19 unique observed levels"
+    },
+    "AccidentArea": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "Rural",
+        "Urban"
+      ],
+      "description": "Categorical feature 'AccidentArea' with 2 unique observed levels"
+    },
+    "Sex": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "Female",
+        "Male"
+      ],
+      "description": "Categorical feature 'Sex' with 2 unique observed levels"
+    },
+    "MaritalStatus": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "Divorced",
+        "Married",
+        "Single",
+        "Widow"
+      ],
+      "description": "Categorical feature 'MaritalStatus' with 4 unique observed levels"
+    },
+    "Fault": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "Policy Holder",
+        "Third Party"
+      ],
+      "description": "Categorical feature 'Fault' with 2 unique observed levels"
+    },
+    "PolicyType": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "Sedan - All Perils",
+        "Sedan - Collision",
+        "Sedan - Liability",
+        "Sport - All Perils",
+        "Sport - Collision",
+        "Sport - Liability",
+        "Utility - All Perils",
+        "Utility - Collision",
+        "Utility - Liability"
+      ],
+      "description": "Categorical feature 'PolicyType' with 9 unique observed levels"
+    },
+    "VehicleCategory": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "Sedan",
+        "Sport",
+        "Utility"
+      ],
+      "description": "Categorical feature 'VehicleCategory' with 3 unique observed levels"
+    },
+    "VehiclePrice": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "20000 to 29000",
+        "30000 to 39000",
+        "40000 to 59000",
+        "60000 to 69000",
+        "less than 20000",
+        "more than 69000"
+      ],
+      "description": "Categorical feature 'VehiclePrice' with 6 unique observed levels"
+    },
+    "Days_Policy_Accident": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "1 to 7",
+        "15 to 30",
+        "8 to 15",
+        "more than 30",
+        "none"
+      ],
+      "description": "Categorical feature 'Days_Policy_Accident' with 5 unique observed levels"
+    },
+    "Days_Policy_Claim": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "15 to 30",
+        "8 to 15",
+        "more than 30",
+        "none"
+      ],
+      "description": "Categorical feature 'Days_Policy_Claim' with 4 unique observed levels"
+    },
+    "PastNumberOfClaims": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "1",
+        "2 to 4",
+        "more than 4",
+        "none"
+      ],
+      "description": "Categorical feature 'PastNumberOfClaims' with 4 unique observed levels"
+    },
+    "AgeOfVehicle": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "2 years",
+        "3 years",
+        "4 years",
+        "5 years",
+        "6 years",
+        "7 years",
+        "more than 7",
+        "new"
+      ],
+      "description": "Categorical feature 'AgeOfVehicle' with 8 unique observed levels"
+    },
+    "AgeOfPolicyHolder": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "16 to 17",
+        "18 to 20",
+        "21 to 25",
+        "26 to 30",
+        "31 to 35",
+        "36 to 40",
+        "41 to 50",
+        "51 to 65",
+        "over 65"
+      ],
+      "description": "Categorical feature 'AgeOfPolicyHolder' with 9 unique observed levels"
+    },
+    "PoliceReportFiled": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "No",
+        "Yes"
+      ],
+      "description": "Categorical feature 'PoliceReportFiled' with 2 unique observed levels"
+    },
+    "WitnessPresent": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "No",
+        "Yes"
+      ],
+      "description": "Categorical feature 'WitnessPresent' with 2 unique observed levels"
+    },
+    "AgentType": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "External",
+        "Internal"
+      ],
+      "description": "Categorical feature 'AgentType' with 2 unique observed levels"
+    },
+    "NumberOfSuppliments": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "1 to 2",
+        "3 to 5",
+        "more than 5",
+        "none"
+      ],
+      "description": "Categorical feature 'NumberOfSuppliments' with 4 unique observed levels"
+    },
+    "AddressChange_Claim": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "1 year",
+        "2 to 3 years",
+        "4 to 8 years",
+        "no change",
+        "under 6 months"
+      ],
+      "description": "Categorical feature 'AddressChange_Claim' with 5 unique observed levels"
+    },
+    "NumberOfCars": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "1 vehicle",
+        "2 vehicles",
+        "3 to 4",
+        "5 to 8",
+        "more than 8"
+      ],
+      "description": "Categorical feature 'NumberOfCars' with 5 unique observed levels"
+    },
+    "BasePolicy": {
+      "type": "categorical",
+      "python_types": [
+        "str"
+      ],
+      "allowed_categories": [
+        "All Perils",
+        "Collision",
+        "Liability"
+      ],
+      "description": "Categorical feature 'BasePolicy' with 3 unique observed levels"
+    }
+  },
+  "unsupported_fields": {
+    "annual_mileage": "Not present in historical insurance claims dataset. Must not be mapped to other columns.",
+    "driving_experience": "Not present in historical insurance claims dataset. Must not be mapped to other columns.",
+    "vehicle_usage": "Not present in historical insurance claims dataset. Must not be mapped to other columns."
+  }
+}
