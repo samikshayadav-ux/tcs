@@ -95,13 +95,14 @@ def generate_deterministic_explanation(
     policy_type = features.get("PolicyType", features.get("BasePolicy", "Standard Policy"))
 
     risk_factors = derive_evidence_factors(features)
+    first_factor = risk_factors[0].rstrip(".").lower() if risk_factors else "historical profile factors"
 
     # Recommendations based on risk tier
     if risk_tier == "HIGH":
         summary = (
             f"The statistical model assigned an elevated review priority score of {indicative_score}/100 "
             f"(uncalibrated fraud-class score: {score:.3f}) for this {make} claim under {policy_type}. "
-            f"Key risk indicators include {risk_factors[0].lower() if risk_factors else 'historical profile factors'}. "
+            f"Key risk indicators include {first_factor}. "
             "This claim warrants secondary verification by the Special Investigation Unit (SIU) before settlement."
         )
         actions = [

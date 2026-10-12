@@ -31,8 +31,8 @@ UNSUPPORTED_FIELDS_EXPLANATIONS = {
 }
 
 DEFAULT_DISCLAIMER = (
-    "This risk score is a statistical underwriting risk estimate intended solely for triage "
-    "and documentation review. It is NOT proof of fraud or a legal determination."
+    "Experimental claim-review assistance; not proof of fraud. The score is an "
+    "uncalibrated historical claim-fraud model indicator for manual review only."
 )
 
 
